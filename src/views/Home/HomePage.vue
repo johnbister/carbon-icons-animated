@@ -67,6 +67,7 @@ import InfoTile from "../../components/InfoTile";
 import DemoButton from "../../components/DemoButton";
 import { tileDetails } from "../../data/tileDetails.js";
 
+
 export default {
   name: "LandingPage",
   components: {
@@ -100,7 +101,7 @@ export default {
 
 .main-content {
   width: calc(100% - #{$spacing-09});
-  height: 150vh;
+  height: 500vh;
   margin-left: $spacing-09;
   @include gray-background;
 }
@@ -151,32 +152,7 @@ h3 {
   margin: 0 !important;
 }
 
-.animated-tile {
-  opacity: 0;
-  transform: scale(0.6);
-  animation: 0.2s fade-in forwards cubic-bezier(0.2, 0, 1, 0.9);
-  will-change: opacity, transform;
-}
 
-.animated-tile:nth-of-type(1),
-.animated-tile:nth-of-type(5) {
-  animation-delay: 0.2s;
-}
-
-.animated-tile:nth-of-type(2),
-.animated-tile:nth-of-type(6) {
-  animation-delay: 0.3s;
-}
-
-.animated-tile:nth-of-type(3),
-.animated-tile:nth-of-type(7) {
-  animation-delay: 0.4s;
-}
-
-.animated-tile:nth-of-type(4),
-.animated-tile:nth-of-type(8) {
-  animation-delay: 0.5s;
-}
 
 @keyframes fade-in {
   to {
