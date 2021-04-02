@@ -10,72 +10,144 @@ import TrashIcon from "../components/IconAnimations/TrashIcon";
 import PowerIcon from "../components/IconAnimations/PowerIcon";
 import UploadIcon from "../components/IconAnimations/UploadIcon";
 import SaveIcon from "../components/IconAnimations/SaveIcon";
+import ChatIcon from "../components/IconAnimations/ChatIcon";
+import CopyIcon from "../components/IconAnimations/CopyIcon";
+import AttachmentIcon from "../components/IconAnimations/AttachmentIcon";
+import NotificationIcon from "../components/IconAnimations/NotificationIcon";
+import PurchaseIcon from "../components/IconAnimations/PurchaseIcon";
+import LinkIcon from "../components/IconAnimations/LinkIcon";
+import DataBaseIcon from "../components/IconAnimations/DataBaseIcon";
+import WatsonIcon from "../components/IconAnimations/WatsonIcon";
+import BeeIcon from "../components/IconAnimations/BeeIcon";
+import HomeIcon from "../components/IconAnimations/HomeIcon";
+import DownToBottomIcon from "../components/IconAnimations/DownToBottomIcon";
+import UpToTopIcon from "../components/IconAnimations/UpToTopIcon";
+import PageFirstIcon from "../components/IconAnimations/PageFirstIcon";
+import PageLastIcon from "../components/IconAnimations/PageLastIcon";
+import SendIcon from "../components/IconAnimations/SendIcon";
+import CollapseAllIcon from "../components/IconAnimations/CollapseAllIcon";
+
+
 
 // import LearnIcon from "../components/IconAnimations/LearnIcon";
 
 let tileDetails = [
   {
-    title: "Develop APIs and titles",
-    info:
-      "Edit, assemble, secure, and test APIs.  Package APIs using products for publishing to consumers",
+    title: "Edit",
     icon: EditIcon
   },
   {
-    title: "Manage catalogs",
-    info: "Manage active APIs and consumers",
+    title: "Grid",
     icon: GridIcon
   },
   {
-    title: "Manage resources",
-    info: "Configure user registries, OAuth providers, and TLS",
+    title: "Archive",
     icon: ArchiveIcon
   },
   {
-    title: "Manage settings",
-    info: "Edit settings for roles, notifications, and more",
+    title: "Settings",
     icon: SettingsIcon
   },
   {
-    title: "Learn more",
-    info: "Documentation and tutorials with step-by-step instructions",
+    title: "Education",
     icon: EducationIcon
     // icon:learnIcon
   },
   {
-    title: "Connect",
-    info: "Find expert answers in the API Connect community forum",
+    title: "Connection Signal",
     icon: ConnectionSignalIcon
   },
   {
-    title: "Download toolkit",
-    info: "Download toolkit and credentials for various platforms",
+    title: "Download",
     icon: DownloadIcon
   },
   {
-    title: "Analytics",
-    info: "View and analyze API analytics data",
+    title: "Chart Scatter",
     icon: ChartScatterIcon
   },
   {
     title: "Trash",
-    info: "Empty trash",
     icon: TrashIcon
   },
   {
     title: "Power",
-    info: "Turn on or off",
     icon: PowerIcon
   },
   {
     title: "Upload",
-    info: "Upload file",
     icon: UploadIcon
   },
   {
     title: "Save",
-    info: "Save file",
     icon: SaveIcon
+  },
+  {
+    title: "Chat",
+    icon: ChatIcon
+  },
+  {
+    title: "Copy",
+    icon: CopyIcon
+  },
+  {
+    title: "Attachment",
+    icon: AttachmentIcon
+  },
+  {
+    title: "Notification",
+    icon: NotificationIcon
+  },
+  {
+    title: "Purchase",
+    icon: PurchaseIcon
+  },
+  {
+    title: "Link",
+    icon: LinkIcon
+  },
+  {
+    title: "Data base",
+    icon: DataBaseIcon
+  },
+  {
+    title: "Watson",
+    icon: WatsonIcon
+  },
+  {
+    title: "Page first",
+    icon: PageFirstIcon
+  },
+  {
+    title: "Page last",
+    icon: PageLastIcon
+  },
+  {
+    title: "Down to bottom",
+    icon: DownToBottomIcon
+  },
+  {
+    title: "Up to top",
+    icon: UpToTopIcon
+  },
+  {
+    title: "Bee",
+    icon: BeeIcon
+  },
+  {
+    title: "Home",
+    icon: HomeIcon
+  },
+  {
+    title: "Send",
+    icon: SendIcon
+  },
+  {
+    title: "Collapse all",
+    icon: CollapseAllIcon
   }
+
+  
 ];
+
 
 export { tileDetails };
