@@ -22,7 +22,7 @@ svg {
 
 @mixin carbon-animation--twist() { 
     &:hover svg {
-      animation: .5s twist ease-in;
+      animation: .5s twist ease-in-out;
     }
    
    @keyframes twist {
@@ -34,7 +34,7 @@ svg {
 
 @mixin carbon-animation--spin() { 
     &:hover svg {
-      animation: .5s spin ease-in;
+      animation: .5s spin ease-in-out;
     }
    @keyframes spin {
      100% { transform: rotate(360deg)}
