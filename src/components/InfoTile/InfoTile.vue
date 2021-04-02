@@ -23,7 +23,7 @@ export default {
   name: "InfoTile",
   props: {
     title: String,
-    info: String,
+   // info: String,
     icon: Object
   }
 };
@@ -35,13 +35,13 @@ export default {
   padding: $spacing-06;
   flex-direction: column;
   justify-content: space-between;
-  height: 232px;
+  height: 120px;
 }
 .tile__heading {
-  @include carbon--type-style("productive-heading-03");
+  @include carbon--type-style("body-long-01");
   margin-top: $spacing-04;
 }
-.tile__info {
-  @include carbon--type-style("body-long-01");
-}
+//.tile__info {
+///  @include carbon--type-style("body-long-01");
+//}
 </style>
