@@ -35,16 +35,16 @@
   }
 
   &:hover .box--one {
-    animation: box-one 2s forwards infinite cubic-bezier(0.4, 0.14, 0.3, 1);
+    animation: box-one 2s infinite cubic-bezier(0.4, 0.14, 0.3, 1);
   }
   &:hover .box--two {
-   animation: box-two 2s forwards infinite cubic-bezier(0.4, 0.14, 0.3, 1);
+   animation: box-two 2s infinite cubic-bezier(0.4, 0.14, 0.3, 1);
   }
   &:hover .box--three {
-    animation: box-three 2s forwards infinite cubic-bezier(0.4, 0.14, 0.3, 1);
+    animation: box-three 2s infinite cubic-bezier(0.4, 0.14, 0.3, 1);
   }
   &:hover .box--four {
-    animation: box-four 2s forwards infinite cubic-bezier(0.4, 0.14, 0.3, 1);
+    animation: box-four 2s infinite cubic-bezier(0.4, 0.14, 0.3, 1);
   }
 
   @keyframes box-one {
@@ -142,11 +142,11 @@
 
 
   &:hover .connect--inner {
-    animation: inner-signal 1.5s forwards cubic-bezier(0.4, 0.14, 0.3, 1);
+    animation: inner-signal 1.5s infinite cubic-bezier(0.4, 0.14, 0.3, 1);
   }
 
   &:hover .connect--outer {
-    animation: outer-signal 1.5s forwards cubic-bezier(0.4, 0.14, 0.3, 1);
+    animation: outer-signal 1.5s infinite cubic-bezier(0.4, 0.14, 0.3, 1);
   }
 
   @keyframes inner-signal {
@@ -172,7 +172,7 @@
   }
 
   &:hover .arrow {
-    animation: arrow 3s infinite ease-out;
+    animation: arrow 3s infinite motion(standard, expressive);
   }
   
   @keyframes arrow {
@@ -194,23 +194,23 @@
   }
 
   &:hover .dot--one {
-    animation: dot-one 2s forwards cubic-bezier(0.4, 0.14, 0.3, 1);
+    animation: dot-one 2s infinite cubic-bezier(0.4, 0.14, 0.3, 1);
   }
 
   &:hover .dot--two {
-    animation: dot-two 2s forwards cubic-bezier(0.4, 0.14, 0.3, 1);
+    animation: dot-two 2s infinite cubic-bezier(0.4, 0.14, 0.3, 1);
   }
 
   &:hover .dot--three {
-    animation: dot-three 2s forwards cubic-bezier(0.4, 0.14, 0.3, 1);
+    animation: dot-three 2s infinite cubic-bezier(0.4, 0.14, 0.3, 1);
   }
 
   &:hover .dot--four {
-    animation: dot-four 2s forwards cubic-bezier(0.4, 0.14, 0.3, 1);
+    animation: dot-four 2s infinite cubic-bezier(0.4, 0.14, 0.3, 1);
   }
 
   &:hover .dot--five {
-    animation: dot-five 2s forwards cubic-bezier(0.4, 0.14, 0.3, 1);
+    animation: dot-five 2s infinite cubic-bezier(0.4, 0.14, 0.3, 1);
   }
   
   @keyframes dot-one {
@@ -295,7 +295,7 @@
   }
 
   &:hover .arrow {
-    animation: arrow 3s infinite ease-out;
+    animation: arrow 3s infinite motion(standard, expressive);
   }
   
   @keyframes arrow {
@@ -308,7 +308,7 @@
 // save
 @mixin carbon-animation--save-icon {
   &:hover .slide {
-    animation: file-cabinet-handle 2s infinite cubic-bezier(0.4, 0.14, 0.3, 1);
+    animation: slide 2s infinite cubic-bezier(0.4, 0.14, 0.3, 1);
   }
 
   .slide {
@@ -319,11 +319,579 @@
   @keyframes slide {
     10% {transform: translateX(0)}
     20% {transform: translateX(-2px)}
-    30% {transform: translateX(2px)}
+    30% {transform: translateX(0px)}
     40% {transform: translateX(0)}
     100% {transform: translateX(0)}
   }
 }
+
+// chat
+@mixin carbon-animation--chat-icon {
+  &:hover .text1 {
+    transform-origin: 25%;
+    will-change: transform;
+    animation: text1 1.5s infinite cubic-bezier(0.4, 0.14, 0.3, 1);
+  }
+
+  &:hover .text2 {
+    transform-origin: 25%;
+    will-change: transform;
+    animation: text2 1.5s infinite cubic-bezier(0.4, 0.14, 0.3, 1);
+  }
+
+  @keyframes text1 {
+    0% { transform: scale(0,1) }
+    10% { transform: scale(0,1) }
+    20% { transform: scale(1,1) }
+    100% { transform: scale(1,1) }
+  }
+
+  @keyframes text2 {
+    0% { transform: scale(0,1) }
+    20% { transform: scale(0,1) }
+    30% { transform: scale(1,1) }
+    100% { transform: scale(1,1) }
+  }
+}
+
+// copy
+@mixin carbon-animation--copy-icon {
+
+  .copy-new {
+    transform-origin: 50% 50%;
+    will-change: transform;
+  }
+
+  &:hover .copy-new {
+    animation: copy-new 2s infinite cubic-bezier(0.4, 0.14, 0.3, 1);
+  }
+
+ 
+  @keyframes copy-new {
+    0% {transform: translate(6px, 6px)}
+    5% {transform: translate(6px, 6px)}
+    30% {transform: translate(0px,0px)}
+    100% {transform: translate(0)}
+  }
+}
+
+// attachment
+@mixin carbon-animation--attachment-icon {
+  &:hover .attachment-lower {
+    animation: attachment-lower 2s infinite cubic-bezier(0.4, 0.14, 0.3, 1);
+  }
+
+  &:hover .attachment-upper {
+    animation: attachment-upper 2s infinite cubic-bezier(0.4, 0.14, 0.3, 1);
+  }
+
+  .attachment-lower,
+  .attachment-upper {
+    transform-origin: 50% 50%;
+    will-change: transform;
+  }
+
+  @keyframes attachment-lower {
+    10% {transform: translate(0)}
+    20% {transform: translate(-2px, -2px)}
+    30% {transform: translate(-2px, -2px)}
+    40% {transform: translate(0)}
+    100% {transform: translate(0)}
+  }
+  @keyframes attachment-upper {
+    10% {transform: translate(0)}
+    20% {transform: translate(2px, 2px)}
+    30% {transform: translate(2px, 2px)}
+    40% {transform: translate(0)}
+    100% {transform: translate(0)}
+  }
+}
+
+// notification
+@mixin carbon-animation--notification-icon {
+  .bell {
+   will-change: transform;
+   transform-origin: 16px 1px;
+ }
+
+ &:hover .bell {
+   animation: bell .8s motion(standard, expressive);
+ }
+
+ @keyframes bell {
+   25% { transform: rotate(7deg)}
+   50% { transform: rotate(-4deg)}
+   75% { transform: rotate(2deg)}
+   100% { transform: rotate(0)}
+ }
+
+ .clapper{
+  will-change: transform;
+ transform-origin: 16px 1px;
+}
+
+&:hover .clapper {
+  animation: clapper .8s motion(standard, expressive);
+}
+
+@keyframes clapper {
+  10% { transform: rotate(0deg) } 
+  40% { transform: rotate(4deg)}
+  65% { transform: rotate(-1deg)}
+  90% { transform: rotate(0)}
+}
+}
+
+// purchase
+@mixin carbon-animation--purchase-icon {
+  &:hover .purchase-stripe {
+    transform-origin: 15%;
+    will-change: transform;
+    animation: purchase-stripe 1.5s infinite cubic-bezier(0.4, 0.14, 0.3, 1);
+  }
+
+  @keyframes purchase-stripe {
+    0% { transform: scale(0,1) }
+    10% { transform: scale(0,1) }
+    20% { transform: scale(1,1) }
+    100% { transform: scale(1,1) }
+  }
+}
+
+// link
+@mixin carbon-animation--link-icon {
+  &:hover .link1 {
+    animation: link1 2s infinite ease-in-out;
+  }
+
+  &:hover .link2 {
+    animation: link2 2s infinite ease-in-out;
+  }
+
+  .link1 {
+    will-change: transform;
+  }
+  
+  .link2 {
+    will-change: transform;
+  }
+
+  @keyframes link1 {
+    0% {transform: translate(0,0)}
+    10% {transform: translate(-.75px,.75px)}
+    20% {transform: translate(-.75px,.75px)}
+    30% {transform: translate(0,0)}
+  }
+
+  @keyframes link2 {
+    0% {transform: translate(0,0)}
+    10% {transform: translate(.75px,-.75px)}
+    20% {transform: translate(.75px,-.75px)}
+    30% {transform: translate(0,0)}
+  }
+}
+
+// chart--database
+@mixin carbon-animation--data-base-icon {
+  .database-circle1,
+  .database-circle2,
+  .database-circle3, {
+    transform-origin: 50% 50%;
+    will-change: transform;
+    transition: 0.2s all;
+  }
+
+  &:hover .database-circle1 {
+    animation: database-circle1 2s infinite cubic-bezier(0.4, 0.14, 0.3, 1);
+  }
+
+  &:hover .database-circle2 {
+    animation: database-circle2 2s infinite cubic-bezier(0.4, 0.14, 0.3, 1);
+  }
+
+  &:hover .database-circle3 {
+    animation: database-circle3 2s infinite cubic-bezier(0.4, 0.14, 0.3, 1);
+  }
+  
+  @keyframes database-circle1 {
+    0% { opacity: 0}
+    10% { opacity: 0}
+    20% { opacity: 1}
+    100% { opacity: 1}
+  }
+
+  @keyframes database-circle2 {
+    0% { opacity: 0}
+    15% { opacity: 0}
+    25% { opacity: 1}
+    100% { opacity: 1}
+  }
+
+  @keyframes database-circle3 {
+    0% { opacity: 0}
+    20% { opacity: 0}
+    30% { opacity: 1}
+    100% { opacity: 1}
+  }
+ }
+
+ // chart--watson
+@mixin carbon-animation--watson-icon {
+  .watson-line1,
+  .watson-line2,
+  .watson-line3,
+  .watson-line4,
+  .watson-line5 {
+    transform-origin: 50% 50%;
+    will-change: transform;
+  
+  }
+
+  &:hover .watson-line1 {
+    animation: watson-line1 1s cubic-bezier(0.4, 0.14, 0.3, 1);
+  }
+
+  &:hover .watson-line2 {
+    animation: watson-line2 1s cubic-bezier(0.4, 0.14, 0.3, 1);
+  }
+
+  &:hover .watson-line3 {
+    animation: watson-line3 1s cubic-bezier(0.4, 0.14, 0.3, 1);
+  }
+
+  &:hover .watson-line4 {
+    animation: watson-line4 1s cubic-bezier(0.4, 0.14, 0.3, 1);
+  }
+
+  &:hover .watson-line5 {
+    animation: watson-line5 1s cubic-bezier(0.4, 0.14, 0.3, 1);
+  }
+  
+  @keyframes watson-line1 {
+    0% { opacity: 0}
+    10% { opacity: 0}
+    20% { opacity: 1}
+    100% { opacity: 1}
+  }
+
+  @keyframes watson-line2 {
+    0% { opacity: 0}
+    15% { opacity: 0}
+    25% { opacity: 1}
+    100% { opacity: 1}
+  }
+
+  @keyframes watson-line3 {
+    0% { opacity: 0}
+    20% { opacity: 0}
+    30% { opacity: 1}
+    100% { opacity: 1}
+  }
+
+  @keyframes watson-line4 {
+    0% { opacity: 0}
+    25% { opacity: 0}
+    35% { opacity: 1}
+    100% { opacity: 1}
+  }
+
+  @keyframes watson-line5 {
+    0% { opacity: 0}
+    30% { opacity: 0}
+    40% { opacity: 1}
+    100% { opacity: 1}
+  }
+}
+
+// page-first-icon
+@mixin carbon-animation--page-first-icon {
+  .page-first-arrow {
+    transform-origin: 50% 50%;
+    will-change: transform;
+  }
+
+  &:hover .page-first-arrow {
+    animation: page-first-arrow 2s infinite motion(standard, expressive);
+  }
+  
+  @keyframes page-first-arrow {
+    0% {transform: translateX(6px)}
+    8% {transform: translateX(6px)}
+    25% {transform: translateX(0px)}
+    100% {transform: translateX(0px)}
+  }
+}
+
+// page-last-icon
+@mixin carbon-animation--page-last-icon {
+  .page-last-arrow {
+    transform-origin: 50% 50%;
+    will-change: transform;
+  }
+
+  &:hover .page-last-arrow {
+    animation: page-last-arrow 2s infinite motion(standard, expressive);
+  }
+  
+  @keyframes page-last-arrow {
+    0% {transform: translateX(-6px)}
+    8% {transform: translateX(-6px)}
+    25% {transform: translateX(0px)}
+    100% {transform: translateX(0px)}
+  }
+}
+
+// up-to-top-icon
+@mixin carbon-animation--up-to-top-icon {
+  .up-to-top-arrow {
+    transform-origin: 50% 50%;
+    will-change: transform;
+  }
+
+  &:hover .up-to-top-arrow {
+    animation: up-to-top-arrow 2s infinite motion(standard, expressive);
+  }
+  
+  @keyframes up-to-top-arrow {
+    0% {transform: translateY(6px)}
+    8% {transform: translateY(6px)}
+    25% {transform: translateY(0px)}
+    100% {transform: translateY(0px)}
+  }
+}
+
+// down-to-bottom-icon
+@mixin carbon-animation--down-to-bottom-icon {
+  .down-to-bottom-arrow {
+    transform-origin: 50% 50%;
+    will-change: transform;
+  }
+
+  &:hover .down-to-bottom-arrow {
+    animation: down-to-bottom-arrow 2s infinite motion(standard, expressive);
+  }
+  
+  @keyframes down-to-bottom-arrow {
+    0% {transform: translateY(-6px)}
+    8% {transform: translateY(-6px)}
+    25% {transform: translateY(0px)}
+    100% {transform: translateY(0px)}
+  }
+}
+
+// bee-icon
+@mixin carbon-animation--bee-icon {
+  .bee-wing-right {
+    transform-origin: 24px 13px;
+    will-change: transform;
+  }
+
+  &:hover .bee-wing-right  {
+    animation: bee-wing-right 2s infinite motion(standard, productive);
+  }
+  
+  @keyframes bee-wing-right {
+     0% { transform: rotate(0deg)}
+    10% { transform: rotate(-15deg)}
+    20% { transform: rotate(0deg)}
+    30% { transform: rotate(-15deg)}
+    40% { transform: rotate(0)}
+  }
+
+  .bee-wing-left {
+    transform-origin: 8px 13px;
+    will-change: transform;
+  }
+
+  &:hover .bee-wing-left {
+    animation: bee-wing-left 2s infinite motion(standard, productive);
+  }
+  
+  @keyframes bee-wing-left {
+     0% { transform: rotate(0deg)}
+    10% { transform: rotate(15deg)}
+    20% { transform: rotate(0deg)}
+    30% { transform: rotate(15deg)}
+    40% { transform: rotate(0)}
+  }
+
+}
+
+// home-icon
+@mixin carbon-animation--home-icon {
+
+  .home-door-top {
+    transform-origin: 14px 16px;
+    will-change: transform;
+  }
+
+  &:hover .home-door-top {
+    animation: home-door-top 2s infinite motion(standard, expressive);
+  }
+  
+  @keyframes home-door-top {
+     0% {transform: translateY(9px)}
+     5% {transform: translateY(9px)}
+    25% {transform: translateY(0px)}
+    100% {transform: translateY(0px)}
+  }
+
+  .home-door-right {
+    transform-origin: 18px 26px;
+    will-change: transform;
+  }
+
+  &:hover .home-door-right {
+    animation: home-door-right 2s infinite motion(standard, expressive);
+  }
+  
+  @keyframes home-door-right {
+     0% {transform: scale(1,0)}
+     5% {transform: scale(1,0)}
+    25% {transform: scale(1,1)}
+    100% {transform: scale(1,1)}
+  }
+
+  .home-door-left {
+    transform-origin: 18px 26px;
+    will-change: transform;
+  }
+
+  &:hover .home-door-left {
+    animation: home-door-right 2s infinite motion(standard, expressive);
+  }
+  
+  @keyframes home-door-left {
+     0% {transform: scale(1,0)}
+     5% {transform: scale(1,0)}
+    25% {transform: scale(1,1)}
+    100% {transform: scale(1,1)}
+  }
+}
+
+// send
+@mixin carbon-animation--send-icon {
+  .send {
+    transform-origin: 50% 50%;
+    will-change: transform;
+  }
+  
+  .send-line1 {
+    transform-origin: -2px 14px;
+    will-change: transform;
+    visibility:hidden;
+  }
+
+  .send-line2 {
+    transform-origin: 2px 18px;
+    will-change: transform;
+    visibility:hidden;
+  }
+
+  &:hover .send {
+    will-change: transform;
+    animation: send 1.5s infinite cubic-bezier(0.4, 0.14, 0.3, 1);
+  }
+  &:hover .send-line1 {
+    visibility: visible !important;
+    will-change: transform;
+    animation: send-line1 1.5s infinite cubic-bezier(0.4, 0.14, 0.3, 1);
+  }
+
+  &:hover .send-line2 {
+    visibility: visible !important;
+    will-change: transform;
+    animation: send-line2 1.5s infinite cubic-bezier(0.4, 0.14, 0.3, 1);
+  }
+  
+
+  @keyframes send-line1 {
+    0% { transform: scale(0,1) }
+    10% { transform: scale(0,1) }
+    20% { transform: scale(1,1) }
+    40% { transform: scale(1,1) }
+    50% { transform: scale(0,1) }
+    100% { transform: scale(0,1) }
+    100% { transform: scale(0,1) }
+  }
+
+  @keyframes send-line2 {
+    0% { transform: scale(0,1) }
+    15% { transform: scale(0,1) }
+    25% { transform: scale(1,1) }
+    38% { transform: scale(1,1) }
+    48% { transform: scale(0,1) }
+    100% { transform: scale(0,1) }
+  }
+
+  @keyframes send {
+    0% { transform: translateX(0px) }
+    10% { transform: translateX(0px) }
+    30% { transform: translateX(8px) }
+    40% { transform: translateX(8px) }
+    50% { transform: translateX(0px) }
+    100% { transform: translateX(0px) }
+  }
+}
+  
+// collpase all
+@mixin carbon-animation--collapse-all-icon {
+
+  .collapse-all {
+    transform-origin: 50% 50%;
+    will-change: transform;
+  }
+
+  &:hover .collapse-all {
+    animation: collapse-all 2s infinite cubic-bezier(0.4, 0.14, 0.3, 1);
+  }
+
+  .collapse-all-line1 {
+    transform-origin: 50% 50%;
+    will-change: transform;
+  }
+
+  &:hover .collapse-all-line1 {
+    animation: collapse-all-line1 2s infinite cubic-bezier(0.4, 0.14, 0.3, 1);
+  }
+
+  .collapse-all-line2 {
+    transform-origin: 50% 50%;
+    will-change: transform;
+  }
+
+  &:hover .collapse-all-line2 {
+    animation: collapse-all-line2 2s infinite cubic-bezier(0.4, 0.14, 0.3, 1);
+  }
+
+  @keyframes collapse-all {
+    5% {transform: translate(0px, 0px)}
+    10% {transform: translate(-2px, 2px)}
+    30% {transform: translate(-2px,2px)}
+    40% {transform: translate(0px, 0px)}
+    100% {transform: translate(0)}
+  }
+
+  @keyframes collapse-all-line1 {
+    0% {transform: translate(0px, 0px)}
+    10% {transform: translate(-7px, 7px)}
+    30% {transform: translate(-7px,7px)}
+    40% {transform: translate(0px, 0px)}
+    100% {transform: translate(0)}
+  }
+
+  @keyframes collapse-all-line2 {
+    0% {transform: translate(0px, 0px)}
+    15% {transform: translate(-12px, 12px)}
+    30% {transform: translate(-12px,12px)}
+    40% {transform: translate(0px, 0px)}
+    100% {transform: translate(0)}
+  }
+}
+
+
+
+
 // For demo purposes only, when the user clicks the "Custom" button, the ".Custom" class gets applied to every tile.  
 // For the icon package, there could be a separate class for each mixin 
 // Then users of the package could apply the corresponding class to the tile (or other element) which would trigger the animation on hover
@@ -341,4 +909,20 @@
   @include carbon-animation--power-icon;
   @include carbon-animation--upload-icon;
   @include carbon-animation--save-icon;
+  @include carbon-animation--chat-icon;
+  @include carbon-animation--copy-icon;
+  @include carbon-animation--attachment-icon;
+  @include carbon-animation--notification-icon;
+  @include carbon-animation--purchase-icon;
+  @include carbon-animation--link-icon;
+  @include carbon-animation--data-base-icon;
+  @include carbon-animation--watson-icon;
+  @include carbon-animation--page-first-icon;
+  @include carbon-animation--page-last-icon;
+  @include carbon-animation--up-to-top-icon;
+  @include carbon-animation--down-to-bottom-icon;
+  @include carbon-animation--bee-icon;
+  @include carbon-animation--home-icon;
+  @include carbon-animation--send-icon;
+  @include carbon-animation--collapse-all-icon
 }
