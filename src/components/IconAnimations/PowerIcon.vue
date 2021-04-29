@@ -1,5 +1,5 @@
 <template>
-  <svg class="icon icon--power" aria-hidden="true" >
+  <svg class="icon icon--power" aria-hidden="true">
     <title>power</title>
     <rect class="power-line" x="15" y="2" width="2" height="14" />
     <path
@@ -21,4 +21,3 @@ export default {
   height: 32px;
 }
 </style>
-
