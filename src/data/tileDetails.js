@@ -26,8 +26,10 @@ import PageFirstIcon from "../components/IconAnimations/PageFirstIcon";
 import PageLastIcon from "../components/IconAnimations/PageLastIcon";
 import SendIcon from "../components/IconAnimations/SendIcon";
 import CollapseAllIcon from "../components/IconAnimations/CollapseAllIcon";
-
-
+import OverflowMenuHorizontalIcon from "../components/IconAnimations/OverflowMenuHorizontalIcon";
+import DiagramIcon from "../components/IconAnimations/DiagramIcon";
+import SecurityIcon from "../components/IconAnimations/SecurityIcon";
+import VolumeUpIcon from "../components/IconAnimations/VolumeUpIcon";
 
 // import LearnIcon from "../components/IconAnimations/LearnIcon";
 
@@ -144,10 +146,23 @@ let tileDetails = [
   {
     title: "Collapse all",
     icon: CollapseAllIcon
+  },
+  {
+    title: "Overflow",
+    icon: OverflowMenuHorizontalIcon
+  },
+  {
+    title: "Diagram",
+    icon: DiagramIcon
+  },
+  {
+    title: "Security",
+    icon: SecurityIcon
+  },
+  {
+    title: "Volume up",
+    icon: VolumeUpIcon
   }
-
-  
 ];
-
 
 export { tileDetails };
