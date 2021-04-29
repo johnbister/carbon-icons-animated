@@ -21,3 +21,7 @@ export default {
     transform-origin: 50% 50%;
   }
 </styles>
+
+
+
+
