@@ -23,7 +23,7 @@ export default {
   name: "InfoTile",
   props: {
     title: String,
-   // info: String,
+    // info: String,
     icon: Object
   }
 };
