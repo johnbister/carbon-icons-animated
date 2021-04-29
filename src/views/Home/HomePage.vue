@@ -67,7 +67,6 @@ import InfoTile from "../../components/InfoTile";
 import DemoButton from "../../components/DemoButton";
 import { tileDetails } from "../../data/tileDetails.js";
 
-
 export default {
   name: "LandingPage",
   components: {
@@ -151,8 +150,6 @@ h3 {
   width: 100%;
   margin: 0 !important;
 }
-
-
 
 @keyframes fade-in {
   to {

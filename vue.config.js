@@ -1,3 +1,3 @@
 module.exports = {
-  publicPath: '/carbon-icons-demo/'
+  publicPath: "/carbon-icons-demo/"
 };
