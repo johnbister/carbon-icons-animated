@@ -889,6 +889,126 @@
   }
 }
 
+// overflow menu horizontal
+@mixin carbon-animation--overflow-menu-horizontal-icon {
+  .circle-left,
+  .circle-middle,
+  .circle-right, {
+    transform-origin: 50% 50%;
+    will-change: transform;
+  }
+
+  &:hover .circle-left {
+    will-change: transform;
+    animation: circle-left 2s infinite cubic-bezier(0.4, 0.14, 0.3, 1);
+  }
+
+  &:hover .circle-middle {
+    will-change: transform;
+    animation: circle-middle 2s infinite cubic-bezier(0.4, 0.14, 0.3, 1);
+  }
+
+  &:hover .circle-right {
+    will-change: transform;
+    animation: circle-right 2s infinite cubic-bezier(0.4, 0.14, 0.3, 1);
+  }
+
+  @keyframes circle-left {
+    0% { opacity: 0}
+    5% { opacity: 0}
+    15% { opacity: 1}
+    100% { opacity: 1}
+  }
+  
+  @keyframes circle-middle {
+    0% { opacity: 0}
+    10% { opacity: 0}
+    20% { opacity: 1}
+    100% { opacity: 1}
+  }
+  
+  @keyframes circle-right {
+    0% { opacity: 0}
+    15% { opacity: 0}
+    25% { opacity: 1}
+    100% { opacity: 1}
+  }
+}
+
+// diagram
+@mixin carbon-animation--diagram-icon {
+  .diagram-slice {
+    will-change: transform;
+  }
+
+  &:hover .diagram-slice {
+    animation: diagram-slice 2s infinite cubic-bezier(0.4, 0.14, 0.3, 1);
+  }
+
+  @keyframes diagram-slice {
+    0% { transform: none }
+    5% { transform: none }
+    17% { transform: translate(-5px, 5.7px) }
+    22% { transform: translate(-5px, 5.7px) }
+    34% { transform: none }
+    100% { transform: none }
+  }
+}
+
+// security
+@mixin carbon-animation--security-icon {
+  .security-checkmark {
+    stroke-dasharray: 40px;
+    stroke-dashoffset: 0px;
+  }
+
+  &:hover .security-checkmark {
+    animation: security-checkmark 2s infinite cubic-bezier(0.4, 0.14, 0.3, 1);
+  }
+
+  @keyframes security-checkmark {
+    4.9% { stroke-dashoffset: 0px}
+    5% { stroke-dashoffset: 40px}
+    50% { stroke-dashoffset: 0px}
+    95% { stroke-dashoffset: 0px}
+    100% { stroke-dashoffset: 0px}
+  }
+}
+
+// volume up
+@mixin carbon-animation--volume-up-icon {
+  .volume-1,
+  .volume-2, {
+    transform-origin: 50% 50%;
+    will-change: transform;
+  }
+
+  &:hover .volume-1 {
+    will-change: transform;
+    animation: volume-1 2s infinite cubic-bezier(0.4, 0.14, 0.3, 1);
+  }
+
+  &:hover .volume-2 {
+    will-change: transform;
+    animation: volume-2 2s infinite cubic-bezier(0.4, 0.14, 0.3, 1);
+  }
+
+  @keyframes volume-1 {
+    0% { opacity: 0}
+    5% { opacity: 0}
+    15% { opacity: 1}
+    100% { opacity: 1}
+  }
+  
+  @keyframes volume-2 {
+    0% { opacity: 0}
+    10% { opacity: 0}
+    20% { opacity: 1}
+    100% { opacity: 1}
+  }
+}
+
+
 
 
 
@@ -924,5 +1044,9 @@
   @include carbon-animation--bee-icon;
   @include carbon-animation--home-icon;
   @include carbon-animation--send-icon;
-  @include carbon-animation--collapse-all-icon
+  @include carbon-animation--collapse-all-icon;
+  @include carbon-animation--overflow-menu-horizontal-icon;
+  @include carbon-animation--diagram-icon;
+  @include carbon-animation--security-icon;
+  @include carbon-animation--volume-up-icon
 }
