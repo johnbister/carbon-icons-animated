@@ -1009,6 +1009,51 @@
 }
 
 
+// rain
+@mixin carbon-animation--rain-icon {
+  .rain1,
+  .rain2,
+  .rain3, {
+    stroke-dasharray: 10px;
+    stroke-dashoffset: 0px;
+  }
+
+  &:hover .rain1 {
+    animation: rain-1 1s infinite cubic-bezier(0.4, 0.14, 0.3, 1);
+  }
+
+  &:hover .rain2 {
+    animation: rain-2 1s infinite cubic-bezier(0.4, 0.14, 0.3, 1);
+  }
+
+  &:hover .rain3 {
+    animation: rain-3 1s infinite cubic-bezier(0.4, 0.14, 0.3, 1);
+  }
+
+  @keyframes rain-1 {
+    0% { stroke-dashoffset: 10px}
+    30% { stroke-dashoffset: 0px}
+    60% { stroke-dashoffset: -10px}
+    100% { stroke-dashoffset: -10px}
+  }
+
+  @keyframes rain-2 {
+    0% { stroke-dashoffset: 10px}
+    10% { stroke-dashoffset: 10px}
+    40% { stroke-dashoffset: 0px}
+    70% { stroke-dashoffset: -10px}
+    100% { stroke-dashoffset: -10px}
+  }
+
+  @keyframes rain-3 {
+    0% { stroke-dashoffset: 10px}
+    20% { stroke-dashoffset: 10px}
+    50% { stroke-dashoffset: 0px}
+    80% { stroke-dashoffset: -10px}
+    100% { stroke-dashoffset: -10px}
+  }
+}
+
 
 
 
@@ -1048,5 +1093,6 @@
   @include carbon-animation--overflow-menu-horizontal-icon;
   @include carbon-animation--diagram-icon;
   @include carbon-animation--security-icon;
-  @include carbon-animation--volume-up-icon
+  @include carbon-animation--volume-up-icon;
+  @include carbon-animation--rain-icon;
 }

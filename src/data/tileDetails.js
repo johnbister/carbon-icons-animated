@@ -30,6 +30,7 @@ import OverflowMenuHorizontalIcon from "../components/IconAnimations/OverflowMen
 import DiagramIcon from "../components/IconAnimations/DiagramIcon";
 import SecurityIcon from "../components/IconAnimations/SecurityIcon";
 import VolumeUpIcon from "../components/IconAnimations/VolumeUpIcon";
+import RainIcon from "../components/IconAnimations/RainIcon";
 
 // import LearnIcon from "../components/IconAnimations/LearnIcon";
 
@@ -162,6 +163,10 @@ let tileDetails = [
   {
     title: "Volume up",
     icon: VolumeUpIcon
+  },
+  {
+    title: "Rain",
+    icon: RainIcon
   }
 ];
 
