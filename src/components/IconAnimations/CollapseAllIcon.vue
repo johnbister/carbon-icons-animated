@@ -1,6 +1,6 @@
 <template>
-  <svg class="icon icon--copy" aria-hidden="true" viewBox="0 -10 36 44">
-    <title>copy</title>
+  <svg class="icon--collapse-all" aria-hidden="true" viewBox="0 0 32 32">
+    <title>collapse all</title>
     <path
       class="collapse-all"
       d="M18,27H4c-1.1,0-2-0.9-2-2v-8c0-1.1,0.9-2,2-2h14c1.1,0,2,0.9,2,2v8C20,26.1,19.1,27,18,27z M4,17v8h14l0-8H4z"
@@ -17,13 +17,12 @@
 </template>
 <script>
 export default {
-  name: "CopyIcon"
+  name: "CollapseAllIcon"
 };
 </script>
 <style lang="scss">
-.icon--copy {
-  width: 36px;
-  height: 44px;
-  margin-top: -12px;
+.icon--collapse-all {
+  width: 32px;
+  height: 32px;
 }
 </style>
