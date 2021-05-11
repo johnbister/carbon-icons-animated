@@ -1075,6 +1075,41 @@
   }
 }
 
+// timer
+@mixin carbon-animation--timer-icon {
+  .timer-hand{
+    transform-origin: 50% 55%;
+    will-change: transform;
+  }
+
+  .timer-start{
+    will-change: transform;
+  }
+
+  &:hover .timer-hand {
+    animation: timer-hand 2s infinite cubic-bezier(0.4, 0.14, 0.3, 1);
+  }
+
+  &:hover .timer-start {
+    animation: timer-start 2s infinite cubic-bezier(0.4, 0.14, 0.3, 1);
+  }
+
+  @keyframes timer-hand {
+    0% { transform: rotate(0deg)}
+    5% { transform: rotate(0deg)}
+    25% { transform: rotate(360deg)}
+    100% { transform: rotate(360deg)}
+  }
+
+  @keyframes timer-start {
+    0% {transform: translateY(0px)}
+    5% {transform: translateY(0px)}
+    10% {transform: translateY(1.5px)}
+    15% {transform: translateY(0px)}
+    100% {transform: translateY(0px)}
+  }
+}
+
 
 
 // For demo purposes only, when the user clicks the "Custom" button, the ".Custom" class gets applied to every tile.  
@@ -1116,4 +1151,5 @@
   @include carbon-animation--volume-up-icon;
   @include carbon-animation--rain-icon;
   @include carbon-animation--hourglass-icon;
+  @include carbon-animation--timer-icon;
 }
