@@ -33,6 +33,7 @@ import VolumeUpIcon from "../components/IconAnimations/VolumeUpIcon";
 import RainIcon from "../components/IconAnimations/RainIcon";
 import HourglassIcon from "../components/IconAnimations/HourglassIcon";
 import TimerIcon from "../components/IconAnimations/TimerIcon";
+import AlarmAddIcon from "../components/IconAnimations/AlarmAddIcon";
 
 // import LearnIcon from "../components/IconAnimations/LearnIcon";
 
@@ -177,6 +178,10 @@ let tileDetails = [
   {
     title: "Timer",
     icon: TimerIcon
+  },
+  {
+    title: "Alarm add",
+    icon: AlarmAddIcon
   }
 ];
 
