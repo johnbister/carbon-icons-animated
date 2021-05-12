@@ -495,7 +495,7 @@
 @mixin carbon-animation--data-base-icon {
   .database-circle1,
   .database-circle2,
-  .database-circle3, {
+  .database-circle3 {
     transform-origin: 50% 50%;
     will-change: transform;
     transition: 0.2s all;
@@ -893,7 +893,7 @@
 @mixin carbon-animation--overflow-menu-horizontal-icon {
   .circle-left,
   .circle-middle,
-  .circle-right, {
+  .circle-right {
     transform-origin: 50% 50%;
     will-change: transform;
   }
@@ -978,7 +978,7 @@
 // volume up
 @mixin carbon-animation--volume-up-icon {
   .volume-1,
-  .volume-2, {
+  .volume-2 {
     transform-origin: 50% 50%;
     will-change: transform;
   }
@@ -1013,7 +1013,7 @@
 @mixin carbon-animation--rain-icon {
   .rain1,
   .rain2,
-  .rain3, {
+  .rain3 {
     stroke-dasharray: 10px;
     stroke-dashoffset: 0px;
   }
@@ -1110,6 +1110,54 @@
   }
 }
 
+// alarm add
+@mixin carbon-animation--alarm-add-icon {
+
+  .alarm-bell1 {
+    transform-origin: 50% 50%;
+    will-change: transform;
+  }
+
+  &:hover .alarm-bell1 {
+    animation: alarm-bell1 2s infinite cubic-bezier(0.4, 0.14, 0.3, 1);
+  }
+
+  .alarm-bell2 {
+    transform-origin: 50% 50%;
+    will-change: transform;
+  }
+
+  &:hover .alarm-bell2 {
+    animation: alarm-bell2 2s infinite cubic-bezier(0.4, 0.14, 0.3, 1);
+  }
+
+  @keyframes alarm-bell1 {
+    5% {transform: translate(0px, 0px)}
+    7% {transform: translate(-1px, 1px)}
+    9% {transform: translate(1px,-1px)}
+    11% {transform: translate(-1px, 1px)}
+    13% {transform: translate(1px,-1px)}
+    15% {transform: translate(-1px, 1px)}
+    18% {transform: translate(1px,-1px)}
+    22% {transform: translate(-1px, 1px)}
+    27% {transform: translate(0)}
+    100% {transform: translate(0)}
+  }
+
+  @keyframes alarm-bell2 {
+    5% {transform: translate(0px, 0px)}
+    7% {transform: translate(-1px, -1px)}
+    9% {transform: translate(1px, 1px)}
+    11% {transform: translate(-1px, -1px)}
+    13% {transform: translate(1px, 1px)}
+    15% {transform: translate(-1px, -1px)}
+    18% {transform: translate(1px, 1px)}
+    22% {transform: translate(-1px, -1px)}
+    27% {transform: translate(0)}
+    100% {transform: translate(0)}
+  }
+}
+
 
 
 // For demo purposes only, when the user clicks the "Custom" button, the ".Custom" class gets applied to every tile.  
@@ -1152,4 +1200,5 @@
   @include carbon-animation--rain-icon;
   @include carbon-animation--hourglass-icon;
   @include carbon-animation--timer-icon;
+  @include carbon-animation--alarm-add-icon;
 }
