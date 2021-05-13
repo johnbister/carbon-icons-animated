@@ -34,6 +34,8 @@ import RainIcon from "../components/IconAnimations/RainIcon";
 import HourglassIcon from "../components/IconAnimations/HourglassIcon";
 import TimerIcon from "../components/IconAnimations/TimerIcon";
 import AlarmAddIcon from "../components/IconAnimations/AlarmAddIcon";
+import AlarmSubtractIcon from "../components/IconAnimations/AlarmSubtractIcon";
+import CalendarToolsIcon from "../components/IconAnimations/CalendarToolsIcon";
 
 // import LearnIcon from "../components/IconAnimations/LearnIcon";
 
@@ -182,6 +184,14 @@ let tileDetails = [
   {
     title: "Alarm add",
     icon: AlarmAddIcon
+  },
+  {
+    title: "Alarm subtract",
+    icon: AlarmSubtractIcon
+  },
+  {
+    title: "Calendar tools",
+    icon: CalendarToolsIcon
   }
 ];
 
