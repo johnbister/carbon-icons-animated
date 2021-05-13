@@ -1113,25 +1113,25 @@
 // alarm add
 @mixin carbon-animation--alarm-add-icon {
 
-  .alarm-bell1 {
+  .alarm-add-bell1 {
     transform-origin: 50% 50%;
     will-change: transform;
   }
 
-  &:hover .alarm-bell1 {
-    animation: alarm-bell1 2s infinite cubic-bezier(0.4, 0.14, 0.3, 1);
+  &:hover .alarm-add-bell1 {
+    animation: alarm-add-bell1 2s infinite cubic-bezier(0.4, 0.14, 0.3, 1);
   }
 
-  .alarm-bell2 {
+  .alarm-add-bell2 {
     transform-origin: 50% 50%;
     will-change: transform;
   }
 
-  &:hover .alarm-bell2 {
-    animation: alarm-bell2 2s infinite cubic-bezier(0.4, 0.14, 0.3, 1);
+  &:hover .alarm-add-bell2 {
+    animation: alarm-add-bell2 2s infinite cubic-bezier(0.4, 0.14, 0.3, 1);
   }
 
-  @keyframes alarm-bell1 {
+  @keyframes alarm-add-bell1 {
     5% {transform: translate(0px, 0px)}
     7% {transform: translate(-1px, 1px)}
     9% {transform: translate(1px,-1px)}
@@ -1144,7 +1144,7 @@
     100% {transform: translate(0)}
   }
 
-  @keyframes alarm-bell2 {
+  @keyframes alarm-add-bell2 {
     5% {transform: translate(0px, 0px)}
     7% {transform: translate(-1px, -1px)}
     9% {transform: translate(1px, 1px)}
@@ -1158,6 +1158,74 @@
   }
 }
 
+// alarm subtract
+@mixin carbon-animation--alarm-subtract-icon {
+
+  .alarm-subtract-bell1 {
+    transform-origin: 50% 50%;
+    will-change: transform;
+  }
+
+  &:hover .alarm-subtract-bell1 {
+    animation: alarm-subtract-bell1 2s infinite cubic-bezier(0.4, 0.14, 0.3, 1);
+  }
+
+  .alarm-subtract-bell2 {
+    transform-origin: 50% 50%;
+    will-change: transform;
+  }
+
+  &:hover .alarm-subtract-bell2 {
+    animation: alarm-subtract-bell2 2s infinite cubic-bezier(0.4, 0.14, 0.3, 1);
+  }
+
+  @keyframes alarm-subtract-bell1 {
+    5% {transform: translate(0px, 0px)}
+    7% {transform: translate(-1px, 1px)}
+    9% {transform: translate(1px,-1px)}
+    11% {transform: translate(-1px, 1px)}
+    13% {transform: translate(1px,-1px)}
+    15% {transform: translate(-1px, 1px)}
+    18% {transform: translate(1px,-1px)}
+    22% {transform: translate(-1px, 1px)}
+    27% {transform: translate(0)}
+    100% {transform: translate(0)}
+  }
+
+  @keyframes alarm-subtract-bell2 {
+    5% {transform: translate(0px, 0px)}
+    7% {transform: translate(-1px, -1px)}
+    9% {transform: translate(1px, 1px)}
+    11% {transform: translate(-1px, -1px)}
+    13% {transform: translate(1px, 1px)}
+    15% {transform: translate(-1px, -1px)}
+    18% {transform: translate(1px, 1px)}
+    22% {transform: translate(-1px, -1px)}
+    27% {transform: translate(0)}
+    100% {transform: translate(0)}
+  }
+}
+
+// calendar tools
+@mixin carbon-animation--calendar-tools-icon {
+
+  .calendar-tools-wrench {
+    transform-origin: 81.25% 65.625%;
+    will-change: transform;
+  }
+
+  &:hover .calendar-tools-wrench {
+    animation: calendar-tools-wrench 2s infinite cubic-bezier(0.4, 0.14, 0.3, 1);
+  }
+
+  @keyframes calendar-tools-wrench {
+    5% {transform: rotate(0deg)}
+    12% {transform: rotate(15deg)}
+    19% {transform: rotate(-15deg)}
+    25% {transform: rotate(0deg)}
+    100% {transform: rotate(0deg)}
+  }
+}
 
 
 // For demo purposes only, when the user clicks the "Custom" button, the ".Custom" class gets applied to every tile.  
@@ -1201,4 +1269,6 @@
   @include carbon-animation--hourglass-icon;
   @include carbon-animation--timer-icon;
   @include carbon-animation--alarm-add-icon;
+  @include carbon-animation--alarm-subtract-icon;
+  @include carbon-animation--calendar-tools-icon;
 }
