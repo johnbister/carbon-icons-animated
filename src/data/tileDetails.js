@@ -36,6 +36,7 @@ import TimerIcon from "../components/IconAnimations/TimerIcon";
 import AlarmAddIcon from "../components/IconAnimations/AlarmAddIcon";
 import AlarmSubtractIcon from "../components/IconAnimations/AlarmSubtractIcon";
 import CalendarToolsIcon from "../components/IconAnimations/CalendarToolsIcon";
+import MicroscopeIcon from "../components/IconAnimations/MicroscopeIcon";
 
 // import LearnIcon from "../components/IconAnimations/LearnIcon";
 
@@ -192,6 +193,10 @@ let tileDetails = [
   {
     title: "Calendar tools",
     icon: CalendarToolsIcon
+  },
+  {
+    title: "Microscope",
+    icon: MicroscopeIcon
   }
 ];
 
