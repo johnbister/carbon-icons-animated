@@ -1227,6 +1227,43 @@
   }
 }
 
+// microscope
+@mixin carbon-animation--microscope-icon {
+
+  .microscope-head {
+    transform-origin: 62.5% 43.75%;
+    will-change: transform;
+  }
+
+  .microscope-adjust {
+    transform-origin: 62.5% 43.75%;
+    will-change: transform;
+  }
+
+  &:hover .microscope-head {
+    animation: microscope-head 2s infinite cubic-bezier(0.4, 0.14, 0.3, 1);
+  }
+
+  &:hover .microscope-adjust {
+    animation: microscope-adjust 2s infinite cubic-bezier(0.4, 0.14, 0.3, 1);
+  }
+
+  @keyframes microscope-head {
+    0% {transform: rotate(0deg)}
+    15% {transform: rotate(-20deg)}
+    20% {transform: rotate(-20deg)}
+    30% {transform: rotate(0deg)}
+    100% {transform: rotate(0deg)}
+  }
+
+  @keyframes microscope-adjust {
+    0% {transform: rotate(0deg) }
+    15% {transform: rotate(-20deg) translate(-1.5px,1.5px)}
+    20% {transform: rotate(-20deg) translate(-1.5px,1.5px)}
+    30% {transform: rotate(0deg) translate(0px,0px)}
+    100% {transform: rotate(0deg)}
+  }
+}
 
 // For demo purposes only, when the user clicks the "Custom" button, the ".Custom" class gets applied to every tile.  
 // For the icon package, there could be a separate class for each mixin 
@@ -1271,4 +1308,5 @@
   @include carbon-animation--alarm-add-icon;
   @include carbon-animation--alarm-subtract-icon;
   @include carbon-animation--calendar-tools-icon;
+  @include carbon-animation--microscope-icon;
 }
