@@ -1265,6 +1265,46 @@
   }
 }
 
+// stamp
+@mixin carbon-animation--stamp-icon {
+
+  .stamp-base {
+    transform-origin: 50% 50%;
+    will-change: transform;
+  }
+
+  .stamp-rubber {
+    transform-origin: 50% 50%;
+    will-change: transform;
+  }
+
+  &:hover .stamp-base {
+    animation: stamp-base 2s infinite cubic-bezier(0.4, 0.14, 0.3, 1);
+  }
+
+  &:hover .stamp-rubber {
+    animation: stamp-rubber 2s infinite cubic-bezier(0.4, 0.14, 0.3, 1);
+  }
+
+  @keyframes stamp-base {
+    0% {transform: translate3d(0,0,0)rotate(0deg)}
+    10% {transform: translate3d(0,-2px,0)rotate(5deg)}
+    15% {transform: translate3d(0,-2px,0) rotate(5deg)}
+    25% {transform: translate3d(0,1.5px,0)}
+    35% {transform: translate3d(0,1.5px,0)}
+    45% {transform: translate3d(0,0,0)}
+    100% {transform: translate3d(0,0,0)}
+  }
+
+  @keyframes stamp-rubber {
+    0% {transform: translate3d(0,0,0)rotate(0deg)}
+    10% {transform: translate3d(0,-2px,0)rotate(5deg)}
+    15% {transform: translate3d(0,-2px,0)rotate(5deg)}
+    23% {transform: translate3d(0,0,0)rotate(0deg)}
+    100% {transform: translate3d(0,0,0)}
+  }
+}
+
 // For demo purposes only, when the user clicks the "Custom" button, the ".Custom" class gets applied to every tile.  
 // For the icon package, there could be a separate class for each mixin 
 // Then users of the package could apply the corresponding class to the tile (or other element) which would trigger the animation on hover
@@ -1309,4 +1349,5 @@
   @include carbon-animation--alarm-subtract-icon;
   @include carbon-animation--calendar-tools-icon;
   @include carbon-animation--microscope-icon;
+  @include carbon-animation--stamp-icon;
 }
