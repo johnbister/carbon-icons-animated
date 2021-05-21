@@ -38,6 +38,7 @@ import AlarmSubtractIcon from "../components/IconAnimations/AlarmSubtractIcon";
 import CalendarToolsIcon from "../components/IconAnimations/CalendarToolsIcon";
 import MicroscopeIcon from "../components/IconAnimations/MicroscopeIcon";
 import StampIcon from "../components/IconAnimations/StampIcon";
+import ThunderstormIcon from "../components/IconAnimations/ThunderstormIcon";
 
 // import LearnIcon from "../components/IconAnimations/LearnIcon";
 
@@ -202,6 +203,10 @@ let tileDetails = [
   {
     title: "Stamp",
     icon: StampIcon
+  },
+  {
+    title: "Thunderstorm",
+    icon: ThunderstormIcon
   }
 ];
 
