@@ -1305,6 +1305,25 @@
   }
 }
 
+// thunderstorm
+@mixin carbon-animation--thunderstorm-icon {
+  .thunderstorm-bolt{
+    stroke-dasharray: 40px;
+    stroke-dashoffset: 0px;
+  }
+
+  &:hover .thunderstorm-bolt {
+    animation: thunderstorm-bolt 2s infinite cubic-bezier(0.4, 0.14, 0.3, 1);
+  }
+
+  @keyframes thunderstorm-bolt {
+    0% { stroke-dashoffset: 40px}
+    5% { stroke-dashoffset: 40px}
+    35% { stroke-dashoffset: 0px}
+    100% { stroke-dashoffset: 0px}
+  }
+}
+
 // For demo purposes only, when the user clicks the "Custom" button, the ".Custom" class gets applied to every tile.  
 // For the icon package, there could be a separate class for each mixin 
 // Then users of the package could apply the corresponding class to the tile (or other element) which would trigger the animation on hover
@@ -1350,4 +1369,5 @@
   @include carbon-animation--calendar-tools-icon;
   @include carbon-animation--microscope-icon;
   @include carbon-animation--stamp-icon;
+  @include carbon-animation--thunderstorm-icon;
 }
