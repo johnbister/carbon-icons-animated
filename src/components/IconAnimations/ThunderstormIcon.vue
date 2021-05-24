@@ -10,11 +10,11 @@
 </template>
 <script>
 export default {
-  name: "AlarmAddIcon"
+  name: "ThunderstormIcon"
 };
 </script>
 <style lang="scss">
-.icon--alarm-icon {
+.icon--thunderstorm-icon {
   width: 32px;
   height: 32px;
 }
