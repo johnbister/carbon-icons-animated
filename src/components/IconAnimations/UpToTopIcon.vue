@@ -1,5 +1,5 @@
 <template>
-  <svg class="icon icon--uptotop" aria-hidden="true" viewBox="0 -10 36 44">
+  <svg class="icon icon--uptotop" aria-hidden="true" viewBox="0 0 32 32" width="32" height="32">
     <title>up to top</title>
     <path
       class="up-to-top-arrow"
@@ -15,9 +15,7 @@ export default {
 </script>
 <style lang="scss">
 .icon--uptotop {
-  width: 36px;
-  height: 44px;
-  margin-top: -12px;
-  overflow: visible;
+  width: 32px;
+  height: 32px;
 }
 </style>
