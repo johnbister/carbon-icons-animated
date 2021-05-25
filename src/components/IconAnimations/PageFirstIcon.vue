@@ -1,5 +1,5 @@
 <template>
-  <svg class="icon icon--pagefirst" aria-hidden="true" viewBox="0 -10 36 44">
+  <svg class="icon icon--pagefirst" aria-hidden="true" viewBox="0 0 32 32" width="32" height="32">
     <title>page first</title>
     <path
       class="page-first-arrow"
@@ -15,9 +15,7 @@ export default {
 </script>
 <style lang="scss">
 .icon--pagefirst {
-  width: 36px;
-  height: 44px;
-  margin-top: -12px;
-  overflow: visible;
+  width: 32px;
+  height: 32px;
 }
 </style>
