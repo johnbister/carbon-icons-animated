@@ -1,5 +1,5 @@
 <template>
-  <svg class="icon icon--attachment" aria-hidden="true" viewBox="0 -10 36 44">
+  <svg class="icon icon--attachment" aria-hidden="true" viewBox="0 0 32 32" width="32" height="32">
     <title>attach file</title>
     <path
       class="attachment-lower"
@@ -21,8 +21,8 @@ export default {
 </script>
 <style lang="scss">
 .icon--attachment {
-  width: 36px;
-  height: 44px;
-  margin-top: -12px;
+  width: 32px;
+  height: 32px;
+  margin-top: 0px;
 }
 </style>
